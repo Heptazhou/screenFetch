@@ -1,9 +1,9 @@
 
-# screenFetch - The Bash Screenshot Information Tool
+# screenfetch
 
-## What is screenFetch?
+## What is screenfetch?
 
-screenFetch is a "Bash Screenshot Information Tool". This handy Bash
+screenfetch is a "Bash Screenshot Information Tool". This handy Bash
 script can be used to generate one of those nifty terminal theme
 information + ASCII distribution logos you see in everyone's screenshots
 nowadays. It will auto-detect your distribution and display an ASCII
@@ -12,13 +12,18 @@ right. There are options to specify no ASCII art, colors, taking a
 screenshot upon displaying info, and even customizing the screenshot
 command! This script is very easy to add to and can easily be extended.
 
-## How do I get screenFetch?
+## How do I get screenfetch?
 
-Please see [Installation](https://github.com/KittyKatt/screenFetch/wiki/Installation).
+```shell
+git clone https://github.com/0h7z/aur.git
+cd aur/screenfetch-beyond
+makepkg -si
+cd ../.. && rm -rf aur
+```
 
 ## Running screenfetch
 
-To run screenFetch, open a terminal of some sort and type in the command `screenfetch`
+To run screenfetch, open a terminal of some sort and type in the command `screenfetch`
 or wherever you saved the script to. This will generate an ASCII logo with the
 information printed to the side of the logo. There are some options that may be
 specified on the command line, and those are shown below or by executing `screenfetch -h`:
@@ -68,9 +73,3 @@ specified on the command line, and those are shown below or by executing `screen
       -V, --version      Display current script version.
       -h, --help         Display this help.
 
-## Contact Me
-
-If you would like to suggest something new, inform me of an issue in the
-script, become part of the project, or talk to me about anything else,
-you can either email me at `screenfetch@kittykatt.co` or you can connect
-to Rizon and reach me at `irc://irc.rizon.net/screenFetch`
