@@ -4,7 +4,7 @@
 
 # Copyright (C) 2010-2019 Brett Bohnenkamper <kittykatt@kittykatt.us>
 
-# Copyright (C) 2022 Heptazhou <zhou@0h7z.com>
+# Copyright (C) 2022-2023 Heptazhou <zhou@0h7z.com>
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published
@@ -144,7 +144,8 @@ wmnames=(
 )
 
 # Array with full Ubuntu release codenames, used so that the script will display
-# i.e. "Ubuntu 18.04 LTS (Bionic Beaver)" instead of "Ubuntu 18.04 bionic"
+# e.g. "Ubuntu 18.04 LTS (Bionic Beaver)" instead of "Ubuntu 18.04 bionic"
+# https://en.wikipedia.org/wiki/Ubuntu_version_history#Table_of_versions
 ubuntu_codenames=(
 		'(Warty Warthog)'			#  4.10
 		'(Hoary Hedgehog)'			#  5.04
@@ -457,7 +458,7 @@ displayHelp () {
 displayVersion () {
 	echo "${underline}screenfetch${c0} v${scriptVersion}"
 	echo "Copyright (C) 2010-2019 Brett Bohnenkamper <kittykatt@kittykatt.us>"
-	echo "Copyright (C) 2022 Heptazhou <zhou@0h7z.com>"
+	echo "Copyright (C) 2022-2023 Heptazhou <zhou@0h7z.com>"
 	echo "This is free software; see the source for copying conditions.  There is NO"
 	echo "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE."
 	echo
